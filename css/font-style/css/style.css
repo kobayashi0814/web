@@ -1,27 +1,37 @@
 @charset "utf-8";
 
 #font1 {
-    color: cyan;
-    font-size: 24px;
-    font-family: serif;
-    font-weight: bold;
-
+    color: darkblue;
+    font-size: 70px;
+    font-family: sans-serif;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 5px 5px whitesmoke;
 }
 
 #font2 {
-    color: #00ffff;
-    font-size: 1.5rem;
-    font-family: sans-serif;
-    font-weight: lighter;
+    color:rgb(107, 6, 6);
+    font-size: 2.5rem;
+    font-family: serif;
+    font-weight: normal;
     font-style: italic;
+    font-weight: 600;
 }
 
 #layout1 {
-    text-align: right;
-    line-height: 2em;
+    color: white;
+    font-size: 50px;
+    line-height: 1.5em;
+    font-style: unset;
 }
 
 #layout2 {
-    text-align: center;
-    line-height: 160%;
+    color: forestgreen;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    line-height: 300%;
+    font-weight: 600;
+}
+body {
+    background: radial-gradient(#ebe8e7, #1b1717);
 }
