@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+article {
+    width: auto;
+    border: solid 1px black;
+    padding: 10px;
+    margin: 5px;
+
+}
