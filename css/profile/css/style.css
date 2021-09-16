@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-image: url();
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Serif JP', serif;
+}
+
+header {
+    margin-bottom: 4rem;
+}
+header,li {
+    display: inline-block;
+
+}
+
+.menu2 {
+margin: 0 16px;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
