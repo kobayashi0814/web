@@ -3,101 +3,150 @@
 html {
     font-size: 16px;
 }
-
 body {
     background-image: url();
 }
-
 body {
     width: 90%;
     margin: auto;
     font-family: 'Noto Sans JP', sans-serif;
     font-family: 'Noto Serif JP', serif;
 }
-
 img {
     max-width: 100%;
     height: atuo;
 }
 
+/* ヘッダー */
 header {
+    background-color: #121258;
     width: 100%;
-    height: 5rem;
+    height: 6rem;
     margin-bottom: 3rem;
 }
-
 ul {
     display: flex;
 }
-
 li:first-child {
     margin-right:auto;
 }
-
 li {
     margin-left: 10px;
-    padding-top: 2rem;
-
+    padding-top: 1.5rem;
 }
-
+.logo {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding-left: 1rem;
+}
+.menu {
+    padding: 2.5rem 1rem 0 0;
+}
 a {
-    text-decoration: none;
+    color: white;
 }
 
-
-
-h3,p {
-    font-size: 1.2rem;
+/* メイン画像 */
+.slide {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 2rem;
 }
 
+@keyframes slideshow{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  28%{
+    opacity: 1
+  }
+  38%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
 
-.section1 {
+.slide img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation :slideshow 24s linear infinite;
+}
+
+.slide img:nth-child(2){
+  animation-delay: 8s;
+}
+
+.slide img:last-child{
+  animation-delay: 16s;
+}
+
+/* section1 */
+
+.section1,.section3 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5rem;
 }
 
 h1 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 2.5rem;
-    padding: 0.5em 1em;
-    margin: 1em 0;
-    border-left: 3px solid #3171af;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    background-color: rgb(198, 208, 240);
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 4px;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+article h3 {
+    display: inline-block;
+    border-bottom: solid #333;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
 }
 
 p {
     color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 
-.text1 h2 {
-    font-size: 2rem;
-    letter-spacing: 3px;
+.text1,.text2,.text3 {
+    width: 45%;
 }
 
-.section1 h3 {
-    border-bottom: solid blue;
-    margin-top: 1.0rem;
-    padding-bottom: 5px;
-}
-
-.pict1 {
+.pict1,.pict2,.pict3 {
+    width: 640px;
+    height: 424px;
     border-radius: 50%;
 }
+
+/* ここから */
 
 .section2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     margin-bottom: 5rem;
-}
-
-.pict2 {
-    width: 640px;
-    height: 424px;
-    border-radius: 50%;
-}
-
-.section3 {
-    display: flex;
-    justify-content: space-between;
 }
