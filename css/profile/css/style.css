@@ -58,12 +58,12 @@ a {
 }
 
 /* メイン画像 */
+
 .slide {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 250px;
   overflow: hidden;
-  margin-bottom: 2rem;
 }
 
 @keyframes slideshow{
@@ -103,7 +103,7 @@ a {
   animation-delay: 16s;
 }
 
-/* section1 */
+/* main section1 */
 
 h1 {
     font-size: 1.8rem;
@@ -191,30 +191,37 @@ header {
     height: 6rem;
     margin-bottom: 0rem;
 }
+
 ul {
     display: flex;
 }
+
 li:first-child {
     margin-right:auto;
 }
+
 li {
     margin-left: 10px;
     padding-top: 1.5rem;
 }
+
 .logo {
     color: white;
     font-size: 2.5rem;
     font-weight: bolder;
     padding-left: 1rem;
 }
+
 .menu {
     padding: 2.5rem 1rem 0 0;
 }
+
 a {
     color: white;
 }
 
 /* メイン画像 */
+
 .slide {
   position: relative;
   width: 100%;
@@ -260,7 +267,7 @@ a {
   animation-delay: 16s;
 }
 
-/* section1 */
+/* メイン section1 */
 
 .section1,.section3 {
     display: flex;
@@ -338,6 +345,3 @@ footer {
 }
 
 }
-
-
-
